@@ -21,4 +21,10 @@ public class UsuarioService {
         Optional<Usuario> usuarioOptional = usuarioRepository.findByEmail(email);
         return usuarioOptional.filter(usuario -> usuario.getSenha().equals(senha));
     }
+
+
+    public Usuario cadastrarUsuario(Usuario usuario) {
+        return usuarioRepository.save(usuario);
+    }
+
 }

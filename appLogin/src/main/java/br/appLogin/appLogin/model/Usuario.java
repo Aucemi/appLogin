@@ -25,7 +25,7 @@ public class Usuario {
     private String senha;
 
     @Column(name = "DATA_CADASTRO")
-    private LocalDateTime dataCadastro;
+    private String dataCadastro;
 
     @Column(name = "PONTUACAO_ACUMULADA")
     private Integer pontuacaoAcumulada;
